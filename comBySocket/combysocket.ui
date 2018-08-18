@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>comBySocketClass</class>
+ <widget class="QWidget" name="comBySocketClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>520</width>
+    <height>526</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>comBySocket</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMaximumSize</enum>
+     </property>
+     <item>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Baudrate:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="pb_set">
+         <property name="text">
+          <string>SetBaudrate</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QCheckBox" name="pb_send">
+         <property name="text">
+          <string>Blind</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="pb_InputClear">
+         <property name="text">
+          <string>Clear</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1" colspan="4">
+        <widget class="QComboBox" name="cmb_baudrate">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="editable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="pb_get">
+         <property name="text">
+          <string>GetBaudrate</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0" colspan="5">
+        <widget class="QTextEdit" name="textEditIn"/>
+       </item>
+       <item row="2" column="2">
+        <widget class="QRadioButton" name="radio_in_hex">
+         <property name="text">
+          <string>Hex</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_2</string>
+         </attribute>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QRadioButton" name="radio_in_string">
+         <property name="text">
+          <string>String</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_2</string>
+         </attribute>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_9">
+         <property name="text">
+          <string>Input:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="pb_senda">
+         <property name="text">
+          <string>Send</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_3"/>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="combysocket.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pb_set</sender>
+   <signal>clicked()</signal>
+   <receiver>comBySocketClass</receiver>
+   <slot>setCom()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>83</x>
+     <y>59</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>8</x>
+     <y>193</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pb_get</sender>
+   <signal>clicked()</signal>
+   <receiver>comBySocketClass</receiver>
+   <slot>getCom()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>206</x>
+     <y>59</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>8</x>
+     <y>223</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pb_InputClear</sender>
+   <signal>clicked()</signal>
+   <receiver>comBySocketClass</receiver>
+   <slot>inClear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>206</x>
+     <y>88</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>6</x>
+     <y>398</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pb_send</sender>
+   <signal>clicked()</signal>
+   <receiver>comBySocketClass</receiver>
+   <slot>blain()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>350</x>
+     <y>44</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>3</x>
+     <y>465</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pb_senda</sender>
+   <signal>clicked()</signal>
+   <receiver>comBySocketClass</receiver>
+   <slot>sendCom()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>268</x>
+     <y>49</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2</x>
+     <y>439</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>setCom()</slot>
+  <slot>getCom()</slot>
+  <slot>sendCom()</slot>
+  <slot>connectServer()</slot>
+  <slot>disconnectServer()</slot>
+  <slot>grabCom()</slot>
+  <slot>inClear()</slot>
+  <slot>outClear()</slot>
+  <slot>sendOutClear()</slot>
+  <slot>blain()</slot>
+  <slot>slot1()</slot>
+ </slots>
+ <buttongroups>
+  <buttongroup name="buttonGroup_2"/>
+ </buttongroups>
+</ui>

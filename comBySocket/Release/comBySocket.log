@@ -1,0 +1,35 @@
+﻿生成启动时间为 2018/7/27 16:39:14。
+     1>项目“C:\Users\Administrator\Desktop\KVM\comBySocket\comBySocket\comBySocket.vcxproj”在节点 2 上(build 个目标)。
+       项目文件包含 ToolsVersion="12.0"。此工具集可能未知或缺失。在这种情况下，通过安装 MSBuild 的正确版本，或许可以解决此问题。否则，该 build 可能已因策略原因而被强制为某个特定 ToolsVersion。将该项目视为其已具有 ToolsVersion="4.0"。有关详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkId=291333。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(299,5): warning MSB8004: Output 目录未以斜杠结尾。此生成实例将添加斜杠，因为必须有这个斜杠才能正确计算 Output 目录。
+     1>InitializeBuildStatus:
+         正在创建“Release\comBySocket.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       CustomBuild:
+         所有输出均为最新。
+       ClCompile:
+         所有输出均为最新。
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\4.8.6\include /I.\GeneratedFiles\Release /IC:\Qt\4.8.6\include\QtCore /IC:\Qt\4.8.6\include\QtGui /IC:\Qt\4.8.6\include\QtNetwork /IC:\Qt\4.8.6\include\QtWidgets /IC:\Qt\4.8.6\include\QtConcurrent /nologo /W1 /WX- /O2 /Oy- /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_NO_DEBUG /D NDEBUG /D QT_CORE_LIB /D QT_GUI_LIB /D QT_NETWORK_LIB /D QT_WIDGETS_LIB /D QT_CONCURRENT_LIB /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt combysocket.cpp
+         combysocket.cpp
+         所有输出均为最新。
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Program Files (x86)\IPKVM\\comBySocket.exe" /NOLOGO /LIBPATH:C:\Qt\4.8.6\lib QtCore4.lib QtGui4.lib QtMultimedia4.lib QtNetwork4.lib qtmain.lib QtCLucene4.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\comBySocket.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Program Files (x86)\IPKVM\comBySocket.pdb" /MAP /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Program Files (x86)\IPKVM\comBySocket.lib" /MACHINE:X86 Release\aes.obj
+         Release\combysocket.obj
+         Release\d3des.obj
+         Release\Encrypt.obj
+         Release\qrc_combysocket.obj
+         Release\moc_combysocket.obj
+         Release\LanbeProtocol.obj
+         Release\main.obj
+         Release\utils.obj
+         LINK : 没有找到 C:\Program Files (x86)\IPKVM\\comBySocket.exe 或上一个增量链接没有生成它；正在执行完全链接
+         comBySocket.vcxproj -> C:\Program Files (x86)\IPKVM\comBySocket.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Program Files (x86)\IPKVM\\comBySocket.exe;#1" /manifest Release\comBySocket.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Release\comBySocket.unsuccessfulbuild”。
+         正在对“Release\comBySocket.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“C:\Users\Administrator\Desktop\KVM\comBySocket\comBySocket\comBySocket.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.93
